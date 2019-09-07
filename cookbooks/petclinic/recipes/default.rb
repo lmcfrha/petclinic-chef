@@ -15,8 +15,7 @@ env_vars [{'CATALINA_BASE' =>
 '-Djava.net.preferIPv4Stack=true -Djava.net.preferIPv4Addresses=true'}]
 end
 remote_file '/opt/tomcat_petclinicserver_8_0_36/webapps/petclinic.war' do
-source
-'http://192.168.0.120:8081/artifactory/libs-snapshot-local/org/springframework/samples/spring-petclinic/1.0.1-SNAPSHOT/spring-petclinic-1.0.1-20190903.174640-1.war'
+source 'http://192.168.0.120:8081/artifactory/libs-snapshot-local/org/springframework/samples/spring-petclinic/1.0.1-SNAPSHOT/spring-petclinic-1.0.1-20190903.174640-1.war'
 owner 'tomcat_petclinicserver'
 group 'tomcat_petclinicserver'
 end
